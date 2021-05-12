@@ -61,16 +61,17 @@ for city in Lines:
         print("Requests error")
             
 #Choose the three cities with the largest distance from Tel Aviv and print them
-the_3_Cities=list()   
-for km_num in all_dis:
-   while len(the_3_Cities)<3 : 
-       big_num=max(all_dis) 
-       index=all_dis.index(max(all_dis))
-       the_3_Cities.append(all_cities_names[index])
-       all_dis[index]= '0' 
-print("The three cities with the largest distance from Tel Aviv: "+ str(the_3_Cities))   
+if len(mylist)>0:
+    the_3_Cities=list()   
+    for km_num in all_dis:
+       while len(the_3_Cities)<3 : 
+           big_num=max(all_dis) 
+           index=all_dis.index(max(all_dis))
+           the_3_Cities.append(all_cities_names[index])
+           all_dis[index]= '0' 
+    print("The three cities with the largest distance from Tel Aviv: "+ str(the_3_Cities))   
+        
     
-
 
     
 
